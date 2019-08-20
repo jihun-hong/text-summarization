@@ -1,5 +1,5 @@
 # Extractive Summarization
-This is the code that implements inference model for BERTSUM + Classifier
+This is the code that implements inference model for BERT + Classifier
 
 The original code for BERTSUM by Yang Liu could be found [here](https://github.com/nlpyang/BertSum)
 
