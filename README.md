@@ -1,5 +1,5 @@
 # Extractive Summarization
-This is the code that implements inference model for BERT + Classifier
+This is the code that implements inference model for BERT + Classifier. The algorithm fine-tunes Google's language model BERT (Bidirectional Encoder Representations from Transformers) for extractive text summarization, and enables the use to do end-to-end inference with the saved model. The pytorch model can be optimized for inference.
 
 The original code for BERTSUM by Yang Liu could be found [here](https://github.com/nlpyang/BertSum)
 
