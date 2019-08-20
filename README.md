@@ -1,5 +1,5 @@
 # Extractive Summarization
-This is the code that implements inference model for BERT + Classifier. The algorithm fine-tunes Google's language model BERT (Bidirectional Encoder Representations from Transformers) for extractive text summarization, and enables the use to do end-to-end inference with the saved model. The pytorch model can be optimized for inference.
+This is the code that implements inference model for BERT + Classifier. The algorithm fine-tunes Google's language model BERT (Bidirectional Encoder Representations from Transformers) for extractive text summarization, and enables the user to do end-to-end inference with the saved model. The pytorch model can be optimized for inference.
 
 The original code for BERTSUM by Yang Liu could be found [here](https://github.com/nlpyang/BertSum)
 
@@ -27,6 +27,8 @@ python optimize.py -path PATH -new_name NAME
 ```
 
 ⚠️ PATH should be replaced with the actual path to the checkpoint model you saved. NAME should be replaced with the new name you intend to give to the new model. The file will be saved under the same folder as your original model, with the new given name.
+
+🚀 Optimizing the model will boost the inference speed by 40% and shrinks the model size by 70%. Please follow the above instructions for optimized inference.
 
 ## Choosing the Encoder
 In order to run the model, you must download the checkpoint for BERT + Classifier in the "model" repository. There are two option for the summarization layer. The first is the Simple Classifier, which is used in the original BertSum paper by Yang Liu. The second is the Deep Classifier, which uses deep feed-forward network as the summarization layer.
