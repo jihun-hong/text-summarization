@@ -1,7 +1,7 @@
 # Extractive Summarization
 This is the code that implements inference model for BERT + Classifier. The algorithm fine-tunes Google's language model BERT (Bidirectional Encoder Representations from Transformers) for extractive text summarization, and enables the user to do end-to-end inference with the saved model. The pytorch model can be optimized for inference.
 
-The original code for BERTSUM by Yang Liu could be found [here](https://github.com/nlpyang/BertSum)
+🌍 The original code for BERTSUM by Yang Liu could be found [here](https://github.com/nlpyang/BertSum)
 
 **Python version**: the code is written in Python 3.6
 
@@ -68,7 +68,7 @@ If you want to use the dnn encoder for summarization, use the following:
 python inference.py -encoder dnn -checkpoint ../models/demo_ckpt_dnn.pt
 ```
 
-UPDATE (2019/07/17):
+📢 UPDATE:
 
 We added a feature "block_lower" to the model. Setting ```-block_lower true``` will not include sentences that have scores less than the arithmetic mean of the entire sentence scores array. For example, let's say that the sentence scores for a text with 5 sentences is [0.4, 0.1, 0.9, 0.3, 0.8]. The aritmetic mean of the array is 0.5, so this means that sentences with scores that are less than 0.5 will not be included in the summary, no matter how large ```num_sentence``` is.
 
