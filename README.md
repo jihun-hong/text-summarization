@@ -28,7 +28,7 @@ python optimize.py -path PATH -new_name NAME
 
 ⚠️ PATH should be replaced with the actual path to the checkpoint model you saved. NAME should be replaced with the new name you intend to give to the new model. The file will be saved under the same folder as your original model, with the new given name.
 
-🚀 Optimizing the model will boost the inference speed by 40% and shrinks the model size by 70%. Please follow the above instructions for optimized inference.
+🚀 Optimizing the model will boost the inference speed by 40% and shrink the model size by 70%. If you train your own model using Yang Liu's BertSum code, please use this optimization feature before you run inference on the model.
 
 ## Choosing the Encoder
 In order to run the model, you must download the checkpoint for BERT + Classifier in the "model" repository. There are two option for the summarization layer. The first is the Simple Classifier, which is used in the original BertSum paper by Yang Liu. The second is the Deep Classifier, which uses deep feed-forward network as the summarization layer.
