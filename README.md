@@ -5,7 +5,7 @@ This is the code that implements inference model for BERT + Classifier. The algo
 
 **Python version**: the code is written in Python 3.6
 
-**Package Requirements**: pytorch, pytorch_pretrained_bert
+**Package Requirements**: pytorch, pytorch-transformers
 
 ## Stanford CoreNLP
 The model uses Stanford CoreNLP to tokenize the raw input text during the preprocessing phase.
